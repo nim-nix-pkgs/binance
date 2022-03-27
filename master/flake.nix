@@ -11,6 +11,7 @@
   inputs.src-binance-master.ref   = "refs/heads/master";
   inputs.src-binance-master.owner = "Imperator26";
   inputs.src-binance-master.repo  = "binance";
+  inputs.src-binance-master.dir   = "";
   inputs.src-binance-master.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
