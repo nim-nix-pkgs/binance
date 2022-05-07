@@ -1,5 +1,33 @@
 {
   "nodes": {
+    "binance-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimsha2": "nimsha2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-binance-master": "src-binance-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556681,
+        "narHash": "sha256-9Itlvmo6QVH6EJbROCEBwiXMvny7Ds2J74PPMU/83Bc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "binance",
+        "rev": "04963cd17be3d7f8bf5503523cf92cf86f4c8807",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "binance",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -24,20 +52,22 @@
     "nimsha2": {
       "inputs": {
         "flakeNimbleLib": [
+          "binance-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "binance-master",
           "nixpkgs"
         ],
         "src-nimSHA2-master": "src-nimSHA2-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651918228,
-        "narHash": "sha256-DH7tJ9o4MuE5v7W0VnD56M39TQRfl1D58i0AvFnjAWQ=",
+        "lastModified": 1651555775,
+        "narHash": "sha256-stsXLe1WrbnRH3xl1peiJby9C7D5/hb+TKDHabWoBWQ=",
         "owner": "nim-nix-pkgs",
         "repo": "nimsha2",
-        "rev": "309b65a1911f68632ee28d9562f36a7cfb4c04b2",
+        "rev": "e08e950959a512478aa13e4de7c5c1193ddd36c9",
         "type": "github"
       },
       "original": {
@@ -61,10 +91,9 @@
     },
     "root": {
       "inputs": {
+        "binance-master": "binance-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nimsha2": "nimsha2",
-        "nixpkgs": "nixpkgs",
-        "src-binance-master": "src-binance-master"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-binance-master": {
